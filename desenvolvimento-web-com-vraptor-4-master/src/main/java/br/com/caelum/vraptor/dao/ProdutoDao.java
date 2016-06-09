@@ -25,9 +25,7 @@ public class ProdutoDao {
 	
 	
 	public void adiciona(Produto produto) {
-		em.getTransaction().begin();
 		em.persist(produto);
-		em.getTransaction().commit();
 	}
 
 	public void remove(Produto produto) {
